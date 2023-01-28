@@ -39,4 +39,5 @@ class SvgAssets{
   static const String onBoardingSvg1 ='$svgPath/onboarding/onboarding_1.svg';
   static const String onBoardingSvg2 ='$svgPath/onboarding/onboarding_2.svg';
   static const String onBoardingSvg3 ='$svgPath/onboarding/onboarding_3.svg';
+  static const String groupSvg ='$svgPath/Group.svg';
 }

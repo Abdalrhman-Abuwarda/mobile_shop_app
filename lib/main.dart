@@ -5,6 +5,9 @@ import 'package:mobile_shop_app/core/provider/generalProvider.dart';
 import 'package:mobile_shop_app/resources/themeManager.dart';
 import 'package:mobile_shop_app/routing/navigations.dart';
 import 'package:mobile_shop_app/routing/routes.dart';
+import 'package:mobile_shop_app/ui/pages/auth/checkEmailPage.dart';
+import 'package:mobile_shop_app/ui/pages/auth/createNewPasswordPage.dart';
+import 'package:mobile_shop_app/ui/pages/auth/otpVerificationPage.dart';
 import 'package:mobile_shop_app/ui/pages/auth/resetPasswordPage.dart';
 import 'package:mobile_shop_app/ui/pages/auth/signInPage.dart';
 import 'package:mobile_shop_app/ui/pages/auth/signUpPage.dart';
@@ -43,7 +46,7 @@ designSize: const Size(375, 812),
               debugShowCheckedModeBanner: false,
               title: 'Flutter Demo',
               theme: ThemeManager.lightTheme,
-              home: ResetPasswordPage(),
+              home: OtpVerificationPage(),
               navigatorKey: ServiceNavigations.serviceNavi.navKey,
               onGenerateRoute: RoutsGnerate.generateRoute,
             ),

@@ -18,6 +18,7 @@ static const Color blackColor = Color(0xFF000000);
 // static const Color mainBorderColor = Color(0xFFE2E2E2);
 // static const Color foucasBorderColor = Color(0xFF90ADFD);
 static const Color greenColor = Color(0xFF38972E);
+static const Color liteGreenColor = Color(0xFFEAF3EA);
 // static const Color grayColor = Color(0xFF8C8C8C);
 // static const Color secondaryButtomColor = Color(0xFF1F272E);
 // static const Color backgroundColorMainPage = Color(0xFFF7F7F7);
