@@ -20,15 +20,12 @@ class IconAssets{
   static const String person='$iconPath/Profile.svg';
   static const String lock='$iconPath/Lock.svg';
   static const String email='$iconPath/email.svg';
+  static const String category='$iconPath/Category.svg';
   // static const String paypal='$Icon_Path/paypal.svg';
   // static const String mastercard='$Icon_Path/mastercard.svg';
   // static const String apple='$Icon_Path/apple.svg';
   // static const String cash='$Icon_Path/cash.svg';
-  // static const String location='$Icon_Path/Light/Location.svg';
-  // static const String delete='$Icon_Path/Light/Delete.svg';
-  // static const String time_circle='$Icon_Path/Light/Time Circle.svg';
-  // static const String category='$Icon_Path/Light/Category.svg';
-  // static const String home='$Icon_Path/Light/Home.svg';
+
 
 
 }
@@ -40,4 +37,10 @@ class SvgAssets{
   static const String onBoardingSvg2 ='$svgPath/onboarding/onboarding_2.svg';
   static const String onBoardingSvg3 ='$svgPath/onboarding/onboarding_3.svg';
   static const String groupSvg ='$svgPath/Group.svg';
+  static const String headPhoneCategory ='$svgPath/category/headphonesCategory.svg';
+  static const String batteryCategory ='$svgPath/category/batteryCategory.svg';
+  static const String chargerCategory ='$svgPath/category/chargerCategory.svg';
+  static const String mobileCategory ='$svgPath/category/mobileCategory.svg';
+  static const String protectorCategory ='$svgPath/category/protectorsCategory.svg';
+
 }
