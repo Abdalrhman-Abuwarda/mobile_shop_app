@@ -38,9 +38,13 @@ class SvgAssets{
   static const String onBoardingSvg3 ='$svgPath/onboarding/onboarding_3.svg';
   static const String groupSvg ='$svgPath/Group.svg';
   static const String headPhoneCategory ='$svgPath/category/headphonesCategory.svg';
+  static const String smartphoneCategory ='$svgPath/category/smartphoneCategory.svg';
   static const String batteryCategory ='$svgPath/category/batteryCategory.svg';
   static const String chargerCategory ='$svgPath/category/chargerCategory.svg';
-  static const String mobileCategory ='$svgPath/category/mobileCategory.svg';
+  static const String backCoverCategory ='$svgPath/category/backCover.svg';
   static const String protectorCategory ='$svgPath/category/protectorsCategory.svg';
-
+  static const String searchSvg ='$svgPath/searchIconSvg.svg';
+  static const String notificationSvg ='$svgPath/notificationIconSvg.svg';
+  static const String categoryIconSvg ='$svgPath/CategoryIconSvg.svg';
+  static const String notificationIconSvg ='$svgPath/notificationIconSvg.svg';
 }

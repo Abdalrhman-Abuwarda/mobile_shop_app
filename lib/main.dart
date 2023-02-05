@@ -12,6 +12,7 @@ import 'package:mobile_shop_app/ui/pages/auth/resetPasswordPage.dart';
 import 'package:mobile_shop_app/ui/pages/auth/signInPage.dart';
 import 'package:mobile_shop_app/ui/pages/auth/signUpPage.dart';
 import 'package:mobile_shop_app/ui/pages/home/category/mainCategoryPage.dart';
+import 'package:mobile_shop_app/ui/pages/home/mainHomePage.dart';
 import 'package:mobile_shop_app/ui/pages/splashPage.dart';
 import 'package:mobile_shop_app/utils/helper.dart';
 import 'package:provider/provider.dart';
@@ -47,7 +48,7 @@ designSize: const Size(375, 812),
               debugShowCheckedModeBanner: false,
               title: 'Flutter Demo',
               theme: ThemeManager.lightTheme,
-              home: CategoryPage(),
+              home: MainHomePage(),
               navigatorKey: ServiceNavigations.serviceNavi.navKey,
               onGenerateRoute: RoutsGnerate.generateRoute,
             ),

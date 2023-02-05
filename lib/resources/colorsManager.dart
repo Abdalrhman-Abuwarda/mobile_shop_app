@@ -11,7 +11,6 @@ static const Color secondaryBlack = Color(0xFF141010);
 static const Color thirdBlack = Color(0xFF1F272E);
 // static const Color thirdFontColor = Color(0xFF8C8C8C);
 // static const Color labelFontColor = Color(0xFF6C6969);
-// // #E2E2E2
 static const Color whiteColor = Color(0xFFFFFFFF);
 static const Color blackColor = Color(0xFF000000);
 // static const Color blueColor = Color(0xFF4375FF);
