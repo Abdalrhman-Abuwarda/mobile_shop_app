@@ -3,11 +3,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Helpers {
   static final GlobalKey<ScaffoldMessengerState> scaffoldKey = GlobalKey<ScaffoldMessengerState>();
-  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
+  final GlobalKey<ScaffoldState> _scaffoldKey =  GlobalKey<ScaffoldState>();
 
 
  static showSnackBar({required String message}) {
-    print("ssss");
     scaffoldKey.currentState?.showSnackBar(SnackBar(
       content: Text(message),
       duration: const Duration(seconds: 3),

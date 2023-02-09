@@ -1,6 +1,5 @@
 const String Image_Paht = "assets/images";
 class ImageAssets {
-  // static const String splashLogo = "$Image_Paht/splash.png";
   static const String mainImage = "$Image_Paht/mainimage.png";
   static const String successImage = "$Image_Paht/success.png";
   static const String emailImage = "$Image_Paht/email.png";
@@ -21,11 +20,6 @@ class IconAssets{
   static const String lock='$iconPath/Lock.svg';
   static const String email='$iconPath/email.svg';
   static const String category='$iconPath/Category.svg';
-  // static const String paypal='$Icon_Path/paypal.svg';
-  // static const String mastercard='$Icon_Path/mastercard.svg';
-  // static const String apple='$Icon_Path/apple.svg';
-  // static const String cash='$Icon_Path/cash.svg';
-
 
 
 }

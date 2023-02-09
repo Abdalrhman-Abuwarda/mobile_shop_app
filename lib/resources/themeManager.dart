@@ -5,8 +5,7 @@ import 'package:mobile_shop_app/resources/valuesManager.dart';
 import 'colorsManager.dart';
 
 class ThemeManager {
-  // final currentContext = ServiceNavigations.serviceNavi.navKey.currentContext!;
-  static ThemeData get lightTheme { //1
+  static ThemeData get lightTheme {
     return ThemeData( //2
         primaryColor: ColorManager.mainColor,
         scaffoldBackgroundColor: ColorManager.whiteColor,
