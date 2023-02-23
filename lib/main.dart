@@ -5,7 +5,15 @@ import 'package:mobile_shop_app/core/provider/generalProvider.dart';
 import 'package:mobile_shop_app/resources/themeManager.dart';
 import 'package:mobile_shop_app/routing/navigations.dart';
 import 'package:mobile_shop_app/routing/routes.dart';
+import 'package:mobile_shop_app/ui/pages/auth/checkEmailPage.dart';
+import 'package:mobile_shop_app/ui/pages/auth/createNewPasswordPage.dart';
+import 'package:mobile_shop_app/ui/pages/auth/otpVerificationPage.dart';
+import 'package:mobile_shop_app/ui/pages/auth/resetPasswordPage.dart';
+import 'package:mobile_shop_app/ui/pages/auth/signInPage.dart';
+import 'package:mobile_shop_app/ui/pages/auth/signUpPage.dart';
+import 'package:mobile_shop_app/ui/pages/home/category/mainCategoryPage.dart';
 import 'package:mobile_shop_app/ui/pages/home/mainHomePage.dart';
+import 'package:mobile_shop_app/ui/pages/splashPage.dart';
 import 'package:mobile_shop_app/utils/helper.dart';
 import 'package:provider/provider.dart';
 
