@@ -144,6 +144,94 @@ class _MainHomePageState extends State<MainHomePage> {
                               )
                             ],
                           )),
+                      Container(
+                          padding: EdgeInsets.all(10),
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(8.r)),
+                              boxShadow: const [
+                                BoxShadow(
+                                    color: ColorManager.grayWhite2,
+                                    offset: Offset(0, 1),
+                                    blurRadius: 5)
+                              ]),
+                          height: AppSize.s180.h,
+                          width: AppSize.s155.w,
+                          child: Column(
+                            // mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Container(
+                                    width: 34,
+                                    height: 21,
+                                    decoration: BoxDecoration(
+                                        color: ColorManager.mainColor,
+                                        borderRadius:
+                                            BorderRadius.circular(4)),
+                                  ),
+                                  Container(
+                                    padding: const EdgeInsets.all(5),
+                                    width: 22,
+                                    height: 22,
+                                      decoration: BoxDecoration(
+                                        color: ColorManager.mainColor,
+                                        borderRadius: BorderRadius.circular(11)
+                                      ),
+                                      child: SvgPicture.asset(
+                                    IconAssets.heart,
+                                  )),
+                                ],
+                              )
+                            ],
+                          )),
+                      Container(
+                          padding: EdgeInsets.all(10),
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(8.r)),
+                              boxShadow: const [
+                                BoxShadow(
+                                    color: ColorManager.grayWhite2,
+                                    offset: Offset(0, 1),
+                                    blurRadius: 5)
+                              ]),
+                          height: AppSize.s180.h,
+                          width: AppSize.s155.w,
+                          child: Column(
+                            // mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Container(
+                                    width: 34,
+                                    height: 21,
+                                    decoration: BoxDecoration(
+                                        color: ColorManager.mainColor,
+                                        borderRadius:
+                                            BorderRadius.circular(4)),
+                                  ),
+                                  Container(
+                                    padding: const EdgeInsets.all(5),
+                                    width: 22,
+                                    height: 22,
+                                      decoration: BoxDecoration(
+                                        color: ColorManager.mainColor,
+                                        borderRadius: BorderRadius.circular(11)
+                                      ),
+                                      child: SvgPicture.asset(
+                                    IconAssets.heart,
+                                  )),
+                                ],
+                              )
+                            ],
+                          )),
 
                     ],
                   )
