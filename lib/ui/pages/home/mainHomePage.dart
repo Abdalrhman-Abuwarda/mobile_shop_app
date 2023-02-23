@@ -191,7 +191,7 @@ class _MainHomePageState extends State<MainHomePage> {
                       Container(
                           padding: EdgeInsets.all(10),
                           decoration: BoxDecoration(
-                              color: Colors.white,
+                              color: Colors.grey,
                               borderRadius:
                                   BorderRadius.all(Radius.circular(8.r)),
                               boxShadow: const [
