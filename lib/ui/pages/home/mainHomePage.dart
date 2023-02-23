@@ -53,8 +53,7 @@ class _MainHomePageState extends State<MainHomePage> {
     return Scaffold(
       body: Padding(
           padding: const EdgeInsets.only(top: AppPadding.p18),
-          child: (
-              NestedScrollView(
+          child: (NestedScrollView(
             headerSliverBuilder: (context, innerBoxIsScrolled) => [
               SliverAppBar(
                 title: const Text("Home"),
@@ -74,7 +73,7 @@ class _MainHomePageState extends State<MainHomePage> {
             body: SingleChildScrollView(
               child: Column(
                 children: [
-                   addVerticalSpace(40.h),
+                  addVerticalSpace(40.h),
                   CardAD(
                     listImage: ImageAssets2.imageAD,
                     controller: _pageController,
@@ -88,11 +87,9 @@ class _MainHomePageState extends State<MainHomePage> {
                   SeeAll(textLift: "Popular Item"),
                   addVerticalSpace(20.h),
                   GridView(
-
                     shrinkWrap: true,
-                    physics: ScrollPhysics(),
-                    padding:
-                        EdgeInsets.symmetric(horizontal: AppPadding.p25.w),
+                    physics: const ScrollPhysics(),
+                    padding: EdgeInsets.symmetric(horizontal: AppPadding.p25.w),
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
                       mainAxisExtent: 244,
@@ -101,7 +98,7 @@ class _MainHomePageState extends State<MainHomePage> {
                     ),
                     children: [
                       Container(
-                          padding: EdgeInsets.all(10),
+                          padding: const EdgeInsets.all(10),
                           decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius:
@@ -126,26 +123,25 @@ class _MainHomePageState extends State<MainHomePage> {
                                     height: 21,
                                     decoration: BoxDecoration(
                                         color: ColorManager.mainColor,
-                                        borderRadius:
-                                            BorderRadius.circular(4)),
+                                        borderRadius: BorderRadius.circular(4)),
                                   ),
                                   Container(
-                                    padding: const EdgeInsets.all(5),
-                                    width: 22,
-                                    height: 22,
+                                      padding: const EdgeInsets.all(5),
+                                      width: 22,
+                                      height: 22,
                                       decoration: BoxDecoration(
-                                        color: ColorManager.mainColor,
-                                        borderRadius: BorderRadius.circular(11)
-                                      ),
+                                          color: ColorManager.mainColor,
+                                          borderRadius:
+                                              BorderRadius.circular(11)),
                                       child: SvgPicture.asset(
-                                    IconAssets.heart,
-                                  )),
+                                        IconAssets.heart,
+                                      )),
                                 ],
                               )
                             ],
                           )),
                       Container(
-                          padding: EdgeInsets.all(10),
+                          padding: const EdgeInsets.all(10),
                           decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius:
@@ -170,64 +166,19 @@ class _MainHomePageState extends State<MainHomePage> {
                                     height: 21,
                                     decoration: BoxDecoration(
                                         color: ColorManager.mainColor,
-                                        borderRadius:
-                                            BorderRadius.circular(4)),
+                                        borderRadius: BorderRadius.circular(4)),
                                   ),
                                   Container(
-                                    padding: const EdgeInsets.all(5),
-                                    width: 22,
-                                    height: 22,
+                                      padding: const EdgeInsets.all(5),
+                                      width: 22,
+                                      height: 22,
                                       decoration: BoxDecoration(
-                                        color: ColorManager.mainColor,
-                                        borderRadius: BorderRadius.circular(11)
-                                      ),
+                                          color: ColorManager.mainColor,
+                                          borderRadius:
+                                              BorderRadius.circular(11)),
                                       child: SvgPicture.asset(
-                                    IconAssets.heart,
-                                  )),
-                                ],
-                              )
-                            ],
-                          )),
-                      Container(
-                          padding: EdgeInsets.all(10),
-                          decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(8.r)),
-                              boxShadow: const [
-                                BoxShadow(
-                                    color: ColorManager.grayWhite2,
-                                    offset: Offset(0, 1),
-                                    blurRadius: 5)
-                              ]),
-                          height: AppSize.s180.h,
-                          width: AppSize.s155.w,
-                          child: Column(
-                            // mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Container(
-                                    width: 34,
-                                    height: 21,
-                                    decoration: BoxDecoration(
-                                        color: ColorManager.mainColor,
-                                        borderRadius:
-                                            BorderRadius.circular(4)),
-                                  ),
-                                  Container(
-                                    padding: const EdgeInsets.all(5),
-                                    width: 22,
-                                    height: 22,
-                                      decoration: BoxDecoration(
-                                        color: ColorManager.mainColor,
-                                        borderRadius: BorderRadius.circular(11)
-                                      ),
-                                      child: SvgPicture.asset(
-                                    IconAssets.heart,
-                                  )),
+                                        IconAssets.heart,
+                                      )),
                                 ],
                               )
                             ],
