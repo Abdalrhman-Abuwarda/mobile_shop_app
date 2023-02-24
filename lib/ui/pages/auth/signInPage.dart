@@ -2,13 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mobile_shop_app/resources/assetsManager.dart';
 import 'package:mobile_shop_app/resources/valuesManager.dart';
+import 'package:mobile_shop_app/routing/navigations.dart';
+import 'package:mobile_shop_app/routing/router.dart';
 import 'package:mobile_shop_app/ui/wedgts/customTextFormField.dart';
 import 'package:mobile_shop_app/utils/validate.dart';
 
 import '../../../resources/colorsManager.dart';
 
 class SignInPage extends StatefulWidget {
-   SignInPage({Key? key}) : super(key: key);
+  const SignInPage({Key? key}) : super(key: key);
 
   @override
   State<SignInPage> createState() => _SignInPageState();
@@ -35,58 +37,73 @@ class _SignInPageState extends State<SignInPage> {
                 children: [
                   Text(
                     "Welcome",
-                    style: Theme
-                        .of(context)
+                    style: Theme.of(context)
                         .textTheme
-                        .headline1!.copyWith(fontSize: 30.sp),
+                        .headline1!
+                        .copyWith(fontSize: 30.sp),
                   ),
                   addHorizantelSpace(AppSize.s7.w),
                   Text(
                     "back!",
-                    style: Theme
-                        .of(context)
-                        .textTheme
-                        .headline1!
-                        .copyWith(color: ColorManager.greenColor, fontSize: 30.sp),
+                    style: Theme.of(context).textTheme.headline1!.copyWith(
+                        color: ColorManager.greenColor, fontSize: 30.sp),
                   )
                 ],
               ),
               addVerticalSpace(AppSize.s40.h),
-              CustomTextFormField(hintText: "example@gmail.com", controller: _emailController, iconPath: IconAssets.person, validator: (value) => value!.validateEmail()),
+              CustomTextFormField(
+                  hintText: "example@gmail.com",
+                  controller: _emailController,
+                  iconPath: IconAssets.person,
+                  validator: (value) => value!.validateEmail()),
               addVerticalSpace(AppSize.s14.h),
-              CustomTextFormField(hintText: "Password", controller: _passwordController, iconPath: IconAssets.lock, validator: (value) => value!.validatePassword()),
+              CustomTextFormField(
+                  hintText: "Password",
+                  controller: _passwordController,
+                  iconPath: IconAssets.lock,
+                  validator: (value) => value!.validatePassword()),
               addVerticalSpace(AppSize.s16.h),
               Row(
                 children: [
                   const Spacer(),
-                  TextButton(onPressed: (){}, child: Text("Forget password?", style: Theme.of(context).textTheme.bodyText2!.copyWith(color: ColorManager.grayIcon),)),
+                  TextButton(
+                      onPressed: () {ServiceNavigation.serviceNavi.pushNamedWidget(RouteGenerator.resetPasswordPage);},
+                      child: Text(
+                        "Forget password?",
+                        style: Theme.of(context)
+                            .textTheme
+                            .bodyText2!
+                            .copyWith(color: ColorManager.grayIcon),
+                      )),
                 ],
               ),
               addVerticalSpace(AppSize.s40.h),
-              ElevatedButton(onPressed: () {
-                if (formKey.currentState!.validate()){
-                  debugPrint("Hello");
-                }
-              },
+              ElevatedButton(
+                onPressed: () {
+                  if (formKey.currentState!.validate()) {
+                    ServiceNavigation.serviceNavi.pushNamedReplacement(RouteGenerator.homePage);
+                  }
+                },
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: ColorManager.secondaryBlack
-                ),
-                child: const Text("Login"),),
+                    backgroundColor: ColorManager.secondaryBlack),
+                child: const Text("Login"),
+              ),
               const Spacer(),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("Haven’t an account?", style: Theme
-                      .of(context)
-                      .textTheme
-                      .headline4,),
+                  Text(
+                    "Haven’t an account?",
+                    style: Theme.of(context).textTheme.headline4,
+                  ),
                   addHorizantelSpace(AppSize.s5.w),
                   TextButton(
-                      onPressed: () {}, child: Text("Sign up", style: Theme
-                      .of(context)
-                      .textTheme
-                      .headline4!
-                      .copyWith(color: ColorManager.greenColor)))
+                      onPressed: () {ServiceNavigation.serviceNavi.pushNamedReplacement(RouteGenerator.signUpPage);},
+                      child: Text("Sign up",
+                          style: Theme.of(context)
+                              .textTheme
+                              .headline4!
+                              .copyWith(color: ColorManager.greenColor)))
                 ],
               ),
               addVerticalSpace(AppSize.s30.h)

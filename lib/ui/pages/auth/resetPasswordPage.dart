@@ -2,13 +2,21 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mobile_shop_app/resources/assetsManager.dart';
 import 'package:mobile_shop_app/resources/valuesManager.dart';
+import 'package:mobile_shop_app/routing/navigations.dart';
+import 'package:mobile_shop_app/routing/router.dart';
 import 'package:mobile_shop_app/ui/wedgts/customTextFormField.dart';
 import 'package:mobile_shop_app/utils/validate.dart';
 
-class ResetPasswordPage extends StatelessWidget {
-  ResetPasswordPage({Key? key}) : super(key: key);
+class ResetPasswordPage extends StatefulWidget {
+  const ResetPasswordPage({Key? key}) : super(key: key);
 
-  var formKey = GlobalKey<FormState>();
+  @override
+  State<ResetPasswordPage> createState() => _ResetPasswordPageState();
+}
+
+class _ResetPasswordPageState extends State<ResetPasswordPage> {
+  final formKey = GlobalKey<FormState>();
+
   final TextEditingController _emailController = TextEditingController();
 
   @override
@@ -16,11 +24,11 @@ class ResetPasswordPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          onPressed: () {},
-          icon: Icon(Icons.arrow_back_ios_new),
+          onPressed: () {ServiceNavigation.serviceNavi.popFunction();},
+          icon: const Icon(Icons.arrow_back_ios_new),
         ),
         actions: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.info_outline)),
+          IconButton(onPressed: () {}, icon: const Icon(Icons.info_outline)),
           addHorizantelSpace(AppSize.s25.w),
         ],
         backgroundColor: Colors.transparent,
@@ -46,7 +54,12 @@ class ResetPasswordPage extends StatelessWidget {
               addVerticalSpace(AppSize.s24.h),
               CustomTextFormField(hintText: "Email address", controller: _emailController, iconPath: IconAssets.person, validator: (value) => value!.validateEmail()),
               addVerticalSpace(AppSize.s24.h),
-              ElevatedButton(onPressed: (){}, child: Text("Next"))
+              ElevatedButton(onPressed: (){
+                if(formKey.currentState!.validate()) {
+                  ServiceNavigation.serviceNavi.pushNamedWidget(RouteGenerator.checkEmailPage);
+                }
+              },
+                  child: const Text("Next"))
             ],
           ),
         ),

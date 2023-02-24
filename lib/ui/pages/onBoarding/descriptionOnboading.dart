@@ -4,8 +4,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../resources/valuesManager.dart';
 import '../../../core/model/onBoardingModel.dart';
 
-class DescriptionOnboarding extends StatelessWidget {
-  const DescriptionOnboarding({
+class DescriptionOnBoarding extends StatelessWidget {
+  const DescriptionOnBoarding({
     Key? key,
     required this.list,
     required int activeIndex,
