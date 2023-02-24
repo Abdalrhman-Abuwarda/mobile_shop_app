@@ -8,14 +8,14 @@ import 'package:pinput/pinput.dart';
 
 import '../../../resources/colorsManager.dart';
 
-class OtpVerificationPage extends StatefulWidget {
-   OtpVerificationPage({Key? key}) : super(key: key);
+class PhoneVerificationPage extends StatefulWidget {
+   const PhoneVerificationPage({Key? key}) : super(key: key);
 
   @override
-  State<OtpVerificationPage> createState() => _OtpVerificationPageState();
+  State<PhoneVerificationPage> createState() => _PhoneVerificationPageState();
 }
 
-class _OtpVerificationPageState extends State<OtpVerificationPage> {
+class _PhoneVerificationPageState extends State<PhoneVerificationPage> {
   final TextEditingController _codeController = TextEditingController();
 
   @override
@@ -27,7 +27,7 @@ class _OtpVerificationPageState extends State<OtpVerificationPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              addVerticalSpace(AppSize.s150.h),
+              addVerticalSpace(AppSize.s100.h),
               SvgPicture.asset(SvgAssets.groupSvg),
               addVerticalSpace(AppSize.s24.h),
               Text(
@@ -93,7 +93,9 @@ class _OtpVerificationPageState extends State<OtpVerificationPage> {
                 ),
               ),
               addVerticalSpace(AppSize.s25.h),
-              ElevatedButton(onPressed: (){}, child: Text("verify phone number")),
+              ElevatedButton(onPressed: (){
+
+              }, child: const Text("verify phone number")),
               addVerticalSpace(AppSize.s32.h),
               TextButton(onPressed: (){}, child: Text("Edit phone number?", style: Theme.of(context).textTheme.bodyText1!.copyWith(color: ColorManager.blackColor),)),
               addVerticalSpace(AppSize.s15.h),

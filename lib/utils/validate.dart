@@ -3,7 +3,7 @@ import 'dart:io';
 
 extension ExtendedString  on String {
   String? validateEmail() {
-    if(this == null || this.trim().isEmpty){
+    if(trim().isEmpty){
       return 'Please enter your email address';
     }
     // Check if the entered email has the right format
@@ -47,13 +47,14 @@ extension ExtendedString  on String {
     if(this != value){
       return 'password does not match';
     }
+    return null;
   }
 
   String? validateUserName(){
-    if (this == null || this.trim().isEmpty) {
+    if (trim().isEmpty) {
       return 'Please enter your name';
     }
-    if (this.trim().length < 3) {
+    if (trim().length < 3) {
       return 'Please entar valid name';
     }
 
@@ -62,10 +63,10 @@ extension ExtendedString  on String {
   }
 
   String? validateCode(){
-    if (this == null || this.trim().isEmpty) {
+    if (trim().isEmpty) {
       return 'This field is required';
     }
-    if (this.trim().length < 6) {
+    if (trim().length < 6) {
       return 'Code must be at least 4 characters in length';
     }
     // Return null if the entered password is valid
@@ -73,10 +74,10 @@ extension ExtendedString  on String {
   }
 
   String? validatePhoneNumber(){
-    if (this == null || this.trim().isEmpty) {
+    if (trim().isEmpty) {
       return '📱Please enter Phone Number';
     }
-    if (this.trim().length < 11) {
+    if (trim().length < 11) {
       return 'Please entar valid Phone Number';
     }
 
@@ -105,7 +106,7 @@ class Validate {
     RegExp hasUpper = RegExp(r'[A-Z]');
     RegExp hasLower = RegExp(r'[a-z]');
     RegExp hasDigit = RegExp(r'\d');
-    RegExp hasPunct = RegExp(r'[!@#\$&*~-]');
+    RegExp hasPunct = RegExp(r'[!@#$&*~-]');
     // 2
     if (!RegExp(r'.{10,}').hasMatch(value)) {
       return 'Passwords must have at least 10 characters';
@@ -143,6 +144,7 @@ class Validate {
     if(value != password){
       return 'password does not match';
     }
+    return null;
   }
 
   static String? validateUserName(value) {

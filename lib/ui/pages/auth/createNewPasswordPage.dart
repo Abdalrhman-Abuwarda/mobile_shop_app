@@ -25,40 +25,43 @@ class CreateNewPasswordPage extends StatelessWidget {
         ],
         backgroundColor: Colors.transparent,
       ),
-      body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: AppPadding.p25.w),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            addVerticalSpace(AppSize.s100.h),
-            Center(
-              child: Text(
-                "Create new password",
-                style: Theme.of(context).textTheme.headline2,
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: AppPadding.p25.w),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              addVerticalSpace(AppSize.s100.h),
+              Center(
+                child: Text(
+                  "Create new password",
+                  style: Theme.of(context).textTheme.headline2,
+                ),
               ),
-            ),
-            addVerticalSpace(AppSize.s16.h),
-            Text(
-              "Your new password must be different from previous used passwords.",
-              style: Theme.of(context).textTheme.headline4,
-              textAlign: TextAlign.center,
-            ),
-            addVerticalSpace(AppSize.s45.h),
-            CustomTextFormField(
-              validator: (String? value) => value!.validatePassword(),
-              hintText: 'Password',
-              iconPath: IconAssets.lock,
-              controller: _passwordController,),
-            Text("Must be at least 8 characters.", style: Theme.of(context).textTheme.bodyText1,),
-            addVerticalSpace(AppSize.s14.h),
-            CustomTextFormField(
-              validator: (String? value) => value!.validateRePassword(_passwordController.text),
-              hintText: 'Confirm password',
-              iconPath: IconAssets.lock,
-              controller: _confirmPasswordController,),
-            addVerticalSpace(AppSize.s24.h),
-            ElevatedButton(onPressed: (){}, child: const Text("Confirm"))
-          ],
+              addVerticalSpace(AppSize.s16.h),
+              Text(
+                "Your new password must be different from previous used passwords.",
+                style: Theme.of(context).textTheme.headline4,
+                textAlign: TextAlign.center,
+              ),
+              addVerticalSpace(AppSize.s45.h),
+              CustomTextFormField(
+                validator: (String? value) => value!.validatePassword(),
+                hintText: 'Password',
+                iconPath: IconAssets.lock,
+                controller: _passwordController,),
+              addVerticalSpace(AppSize.s5.h),
+              Text("Must be at least 8 characters.", style: Theme.of(context).textTheme.bodyText1,),
+              addVerticalSpace(AppSize.s14.h),
+              CustomTextFormField(
+                validator: (String? value) => value!.validateRePassword(_passwordController.text),
+                hintText: 'Confirm password',
+                iconPath: IconAssets.lock,
+                controller: _confirmPasswordController,),
+              addVerticalSpace(AppSize.s24.h),
+              ElevatedButton(onPressed: (){}, child: const Text("Confirm"))
+            ],
+          ),
         ),
       ),
     );

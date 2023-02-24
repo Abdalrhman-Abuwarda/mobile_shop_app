@@ -5,10 +5,15 @@ import 'package:mobile_shop_app/core/provider/generalProvider.dart';
 import 'package:mobile_shop_app/resources/themeManager.dart';
 import 'package:mobile_shop_app/routing/navigations.dart';
 import 'package:mobile_shop_app/routing/routes.dart';
+import 'package:mobile_shop_app/ui/pages/auth/checkEmailPage.dart';
+import 'package:mobile_shop_app/ui/pages/auth/createNewPasswordPage.dart';
+import 'package:mobile_shop_app/ui/pages/auth/phoneVerificationPage.dart';
+import 'package:mobile_shop_app/ui/pages/auth/resetPasswordPage.dart';
+import 'package:mobile_shop_app/ui/pages/auth/signInPage.dart';
 import 'package:mobile_shop_app/ui/pages/home/mainHomePage.dart';
+import 'package:mobile_shop_app/ui/pages/splashPage.dart';
 import 'package:mobile_shop_app/utils/helper.dart';
 import 'package:provider/provider.dart';
-
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,6 +25,8 @@ void main() async {
   await ScreenUtil.ensureScreenSize();
   // await SharedPrefController().initSharedPreferences();
   runApp(const MyApp());
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
+      overlays: SystemUiOverlay.values);
 }
 
 class MyApp extends StatelessWidget {
@@ -30,20 +37,20 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (_) => GeneralProvider(), child: MyApp()),
+        ChangeNotifierProvider(
+            create: (_) => GeneralProvider(), child: const MyApp()),
       ],
       child: ScreenUtilInit(
-designSize: const Size(375, 812),
-        builder: (BuildContext context, Widget? child) =>
-            MaterialApp(
-              scaffoldMessengerKey: Helpers.scaffoldKey,
-              debugShowCheckedModeBanner: false,
-              title: 'Flutter Demo',
-              theme: ThemeManager.lightTheme,
-              home: MainHomePage(),
-              navigatorKey: ServiceNavigations.serviceNavi.navKey,
-              onGenerateRoute: RoutsGnerate.generateRoute,
-            ),
+        designSize: const Size(375, 812),
+        builder: (BuildContext context, Widget? child) => MaterialApp(
+          scaffoldMessengerKey: Helpers.scaffoldKey,
+          debugShowCheckedModeBanner: false,
+          title: 'Flutter Demo',
+          theme: ThemeManager.lightTheme,
+          home: const SignInPage(),
+          navigatorKey: ServiceNavigation.serviceNavi.navKey,
+          onGenerateRoute: RoutsGenerate.generateRoute,
+        ),
       ),
     );
   }
