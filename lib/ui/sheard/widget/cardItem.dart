@@ -16,82 +16,86 @@ class CardItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-        padding: const EdgeInsets.all(10),
-        decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.all(Radius.circular(AppPadding.p8.r)),
-            boxShadow: const [
-              BoxShadow(
-                  color: ColorManager.grayWhite2,
-                  offset: Offset(0, 1),
-                  blurRadius: 5)
-            ]),
-        height: 255.h,
-        width: AppSize.s155.w,
-        child: Column(
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Visibility(
-                  visible: (discount != null)? true : false,
-                  child: Container(
-                    alignment: Alignment.center,
-                    width: 34,
-                    height: 21,
+    return Card(
+      child: Container(
+          padding: const EdgeInsets.all(10),
+          decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.all(Radius.circular(AppPadding.p8.r)),
+              boxShadow: const [
+                BoxShadow(
+                    color: ColorManager.grayWhite2,
+                    offset: Offset(0, 1),
+                    blurRadius: 5)
+              ]),
+          height: 280.h,
+          width: AppSize.s155.w,
+          child: Column(
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Visibility(
+                    visible: (discount != null)? true : false,
+                    child: Container(
+                      alignment: Alignment.center,
+                      width: 34,
+                      height: 21,
+                      decoration: BoxDecoration(
+                          color: ColorManager.mainColor,
+                          borderRadius: BorderRadius.circular(4)),
+                      child:(discount != null)? Text(
+                        "-$discount%",
+                        style: const TextStyle(color: ColorManager.whiteColor),
+                      ):null,
+                    ),
+                  ),
+
+
+                  Container(
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 4, vertical: 5),
+                    width: 22,
+                    height: 22,
                     decoration: BoxDecoration(
                         color: ColorManager.mainColor,
-                        borderRadius: BorderRadius.circular(4)),
-                    child:(discount != null)? Text(
-                      "-$discount%",
-                      style: const TextStyle(color: ColorManager.whiteColor),
-                    ):null,
+                        borderRadius: BorderRadius.circular(11)),
+                    child: SvgPicture.asset(
+                      IconAssets.heart,
+                    ),
                   ),
-                ),
-                Container(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 4, vertical: 5),
-                  width: 22,
-                  height: 22,
-                  decoration: BoxDecoration(
-                      color: ColorManager.mainColor,
-                      borderRadius: BorderRadius.circular(11)),
-                  child: SvgPicture.asset(
-                    IconAssets.heart,
+                ],
+              ),
+              Image.asset(
+                image,
+                width: 110,
+                height: 110,
+              ),
+              addVerticalSpace(20),
+              Text(
+                name,
+                style: const TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
+              ),
+              addVerticalSpace(8),
+              Text("$prise AED",
+                  style: const TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.w600,
+                      color: ColorManager.mainColor)),
+              // addVerticalSpace(8),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  Icon(
+                    Icons.star_rounded,
+                    color: Colors.amber,
                   ),
-                ),
-              ],
-            ),
-            Image.asset(
-              image,
-              width: 110,
-              height: 110,
-            ),
-            addVerticalSpace(20),
-            Text(
-              name,
-              style: const TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
-            ),
-            addVerticalSpace(8),
-            Text("$prise AED",
-                style: const TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.w600,
-                    color: ColorManager.mainColor)),
-            addVerticalSpace(8),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
-                Icon(
-                  Icons.star_rounded,
-                  color: Colors.amber,
-                ),
-                Text("4.5 (3k review)",
-                    style: TextStyle(fontSize: 11, fontWeight: FontWeight.w400))
-              ],
-            )
-          ],
-        ));
+                  Text("4.5 (3k review)",
+                      style: TextStyle(fontSize: 11, fontWeight: FontWeight.w400))
+                ],
+              )
+            ],
+          )),
+    );
   }
 }

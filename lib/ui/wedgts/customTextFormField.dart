@@ -7,7 +7,7 @@ import '../../resources/colorsManager.dart';
 import '../../resources/valuesManager.dart';
 
 class CustomTextFormField extends StatelessWidget {
-  const CustomTextFormField({
+  const CustomTextFormField({super.key,
     required this.hintText,
     required this.controller,
     required this.iconPath,

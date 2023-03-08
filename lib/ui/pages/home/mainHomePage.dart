@@ -86,7 +86,8 @@ class _MainHomePageState extends State<MainHomePage> {
                   SeeAll("Popular Item"),
                   addVerticalSpace(20.h),
                   CustomGridView(
-                      [CardItem(image: ImageAssets.item4, name: "One Plus", prise: "945.00",discount: null,),
+                      [
+                        CardItem(image: ImageAssets.item4, name: "One Plus", prise: "945.00",discount: "30",),
                     CardItem(image: ImageAssets.item2, name: "One Plus", prise: "945.00",discount: null,),
                     CardItem(image: ImageAssets.item3, name: "One Plus", prise: "945.00",discount: null,),
                     CardItem(image: ImageAssets.item1, name: "One Plus", prise: "945.00",discount: null,),
