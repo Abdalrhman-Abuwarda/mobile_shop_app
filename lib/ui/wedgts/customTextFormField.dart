@@ -36,8 +36,10 @@ class CustomTextFormField extends StatelessWidget {
         validator: validator,
         controller: controller,
         decoration: InputDecoration(
+
           hintText: hintText,
-          prefixIcon: Padding(
+          prefixIcon:
+          Padding(
             padding: const EdgeInsets.all(16.0),
             child: SvgPicture.asset(
               iconPath,
