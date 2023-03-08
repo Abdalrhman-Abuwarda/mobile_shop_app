@@ -1,7 +1,12 @@
-const String image_Paht = "assets/images";
+const String image_Paht = "assets/image";
 
 class ImageAssets {
   static const String mainImage = "$image_Paht/mainimage.png";
+  static const String item1 = "$image_Paht/item1.png";
+  static const String item2 = "$image_Paht/item2.png";
+  static const String item3 = "$image_Paht/item3.png";
+  static const String item4 = "$image_Paht/item4.png";
+  static const String item5 = "$image_Paht/item5.png";
   static const String successImage = "$image_Paht/success.png";
   static const String emailImage = "$image_Paht/email.png";
   static const String mobileSuccessImage = "$image_Paht/mobile_success.png";
@@ -26,8 +31,14 @@ class IconAssets {
   static const String person = '$iconPath/Profile.svg';
   static const String lock = '$iconPath/Lock.svg';
   static const String email = '$iconPath/email.svg';
-  static const String category = '$iconPath/Category.svg';
-  static const String heart = '$iconPath/Heart.svg';
+  static const String category = '$iconPath/category.svg';
+  static const String heart = '$iconPath/heart.svg';
+  static const String home = '$iconPath/home.svg';
+  static const String star = '$iconPath/stroke.svg';
+  static const String discovery = '$iconPath/discovery.svg';
+  static const String buy = '$iconPath/buy.svg';
+  static const String profile = '$iconPath/profile2.svg';
+
 }
 
 const String svgPath = 'assets/svg';
@@ -56,6 +67,10 @@ class SvgAssets {
 const String imagePath = 'assets/image';
 
 class ImageAssets2 {
-  static const List imageAD = [ImageAssets2.adImage1,ImageAssets2.adImage1,ImageAssets2.adImage1];
+  static const List imageAD = [
+    ImageAssets2.adImage1,
+    ImageAssets2.adImage1,
+    ImageAssets2.adImage1
+  ];
   static const String adImage1 = '$imagePath/AD_Image/Adphotos.png';
 }
