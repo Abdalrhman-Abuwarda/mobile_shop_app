@@ -6,6 +6,9 @@ import 'package:provider/provider.dart';
 
 import '../../../resources/colorsManager.dart';
 import '../../../resources/valuesManager.dart';
+import '../../../routing/navigations.dart';
+import '../../../routing/router.dart';
+import '../../../routing/routes.dart';
 import 'descriptionOnboading.dart';
 import 'pageViewOnBoarding.dart';
 import 'sliderIndicator.dart';
@@ -23,7 +26,6 @@ class OnBoardingPage extends StatefulWidget {
 class _OnBoardingPageState extends State<OnBoardingPage> {
 final List<OnBoardingModel> list = OnBoardingModel.data;
 late PageController _controller;
-int _activeIndex = 0;
 
 @override
   void initState() {
@@ -54,7 +56,7 @@ int _activeIndex = 0;
              addVerticalSpace(AppSize.s50.h),
               TitleOnboarding(list: list, activeIndex: general.activeIndex),
               addVerticalSpace(AppSize.s16.h),
-              DescriptionOnboarding(list: list, activeIndex: general.activeIndex),
+              DescriptionOnBoarding(list: list, activeIndex: general.activeIndex),
               addVerticalSpace(AppSize.s32.h),
               if (general.activeIndex + 1 != list.length)
               ElevatedButton(
@@ -76,8 +78,7 @@ int _activeIndex = 0;
               if (general.activeIndex + 1 >= list.length)
                 ElevatedButton(
                   onPressed: () {
-                    // _controller.nextPage(
-                    //     duration: Duration(milliseconds: 150), curve: Curves.ease);
+                    ServiceNavigation.serviceNavi.pushNamedReplacement(RouteGenerator.signUpPage);
                   },
                   style: ElevatedButton.styleFrom(
                       backgroundColor: ColorManager.mainColor,

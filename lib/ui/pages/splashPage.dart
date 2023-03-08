@@ -21,7 +21,7 @@ class _SplashPageState extends State<SplashPage> {
     // TODO: implement initState
     super.initState();
     Future.delayed(Duration(seconds: 3), (){
-      ServiceNavigations.serviceNavi.pushNamedReplacement(RouteGenerator.onBoarding);
+      ServiceNavigation.serviceNavi.pushNamedReplacement(RouteGenerator.onBoarding);
     });
   }
   @override
