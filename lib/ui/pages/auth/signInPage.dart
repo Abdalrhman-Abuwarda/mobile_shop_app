@@ -16,7 +16,6 @@ class SignInPage extends StatefulWidget {
 
 class _SignInPageState extends State<SignInPage> {
   final TextEditingController _emailController = TextEditingController();
-
   final TextEditingController _passwordController = TextEditingController();
 
   var formKey = GlobalKey<FormState>();
@@ -24,6 +23,7 @@ class _SignInPageState extends State<SignInPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: AppPadding.p25.w),
         child: Form(
