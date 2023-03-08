@@ -8,7 +8,7 @@ class ThemeManager {
   static ThemeData get lightTheme {
     return ThemeData( //2
         primaryColor: ColorManager.mainColor,
-        scaffoldBackgroundColor: ColorManager.whiteColor,
+        scaffoldBackgroundColor: ColorManager.scaffoldColor,
         fontFamily: 'Segoe UI', //3
         buttonTheme: ButtonThemeData( // 4
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18.0)),

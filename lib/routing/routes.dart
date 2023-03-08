@@ -29,7 +29,6 @@ class RoutsGenerate{
         return MaterialPageRoute(builder: (_) => const CheckEmailPage());
       case RouteGenerator.homePage:
         return MaterialPageRoute(builder: (_) => const MainHomePage());
-
         default:
         throw const FormatException("Route not found");
     }

@@ -13,5 +13,6 @@ static const Color whiteColor = Color(0xFFFFFFFF);
 static const Color blackColor = Color(0xFF000000);
 static const Color greenColor = Color(0xFF38972E);
 static const Color liteGreenColor = Color(0xFFEAF3EA);
+static const Color scaffoldColor = Color.fromRGBO(245, 246, 247, 1);
 
 }

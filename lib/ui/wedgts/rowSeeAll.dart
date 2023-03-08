@@ -5,7 +5,7 @@ import '../../resources/colorsManager.dart';
 import '../../resources/valuesManager.dart';
 
 class SeeAll extends StatelessWidget {
-  SeeAll({required this.textLift ,Key? key}) : super(key: key);
+  SeeAll(this.textLift, {Key? key}) : super(key: key);
   String textLift;
   @override
   Widget build(BuildContext context) {

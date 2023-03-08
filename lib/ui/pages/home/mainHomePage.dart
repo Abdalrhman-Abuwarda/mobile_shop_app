@@ -4,6 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:mobile_shop_app/resources/valuesManager.dart';
+import 'package:mobile_shop_app/ui/sheard/widget/cardItem.dart';
+import 'package:mobile_shop_app/ui/sheard/widget/customAppBar.dart';
+import 'package:mobile_shop_app/ui/sheard/widget/customGridViow.dart';
 import 'package:mobile_shop_app/ui/wedgts/rowSeeAll.dart';
 
 import '../../../resources/assetsManager.dart';
@@ -51,30 +54,25 @@ class _MainHomePageState extends State<MainHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Padding(
-          padding: const EdgeInsets.only(top: AppPadding.p18),
-          child: (
-              NestedScrollView(
-            headerSliverBuilder: (context, innerBoxIsScrolled) => [
-              SliverAppBar(
-                title: const Text("Home"),
-                leading: Padding(
-                  padding: const EdgeInsets.all(AppPadding.p12),
-                  child: SvgPicture.asset(SvgAssets.categoryIconSvg),
-                ),
-                actions: [
-                  SvgPicture.asset(SvgAssets.searchSvg),
-                  Padding(
-                    padding: const EdgeInsets.all(AppPadding.p15),
-                    child: SvgPicture.asset(SvgAssets.notificationSvg),
-                  ),
-                ],
-              )
+        appBar: PreferredSize(
+          preferredSize: Size.fromHeight(AppSize.s70.h),
+          child: CustomAppBar(
+            title: "Home",
+            actionsList: [
+              SvgPicture.asset(SvgAssets.searchSvg),
+              Padding(
+                padding: const EdgeInsets.all(AppPadding.p15),
+                child: SvgPicture.asset(SvgAssets.notificationSvg),
+              ),
             ],
-            body: SingleChildScrollView(
+            leadingImages: SvgPicture.asset(IconAssets.category),
+          ),
+        ),
+        body: Padding(
+            padding: const EdgeInsets.only(top: AppPadding.p18),
+            child: SingleChildScrollView(
               child: Column(
                 children: [
-                   addVerticalSpace(40.h),
                   CardAD(
                     listImage: ImageAssets2.imageAD,
                     controller: _pageController,
@@ -85,160 +83,17 @@ class _MainHomePageState extends State<MainHomePage> {
                     },
                   ),
                   addVerticalSpace(40.h),
-                  SeeAll(textLift: "Popular Item"),
+                  SeeAll("Popular Item"),
                   addVerticalSpace(20.h),
-                  GridView(
-
-                    shrinkWrap: true,
-                    physics: ScrollPhysics(),
-                    padding:
-                        EdgeInsets.symmetric(horizontal: AppPadding.p25.w),
-                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2,
-                      mainAxisExtent: 244,
-                      crossAxisSpacing: AppSize.s15.w,
-                      mainAxisSpacing: AppSize.s15.h,
-                    ),
-                    children: [
-                      Container(
-                          padding: EdgeInsets.all(10),
-                          decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(8.r)),
-                              boxShadow: const [
-                                BoxShadow(
-                                    color: ColorManager.grayWhite2,
-                                    offset: Offset(0, 1),
-                                    blurRadius: 5)
-                              ]),
-                          height: AppSize.s180.h,
-                          width: AppSize.s155.w,
-                          child: Column(
-                            // mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Container(
-                                    width: 34,
-                                    height: 21,
-                                    decoration: BoxDecoration(
-                                        color: ColorManager.mainColor,
-                                        borderRadius:
-                                            BorderRadius.circular(4)),
-                                  ),
-                                  Container(
-                                    padding: const EdgeInsets.all(5),
-                                    width: 22,
-                                    height: 22,
-                                      decoration: BoxDecoration(
-                                        color: ColorManager.mainColor,
-                                        borderRadius: BorderRadius.circular(11)
-                                      ),
-                                      child: SvgPicture.asset(
-                                    IconAssets.heart,
-                                  )),
-                                ],
-                              )
-                            ],
-                          )),
-                      Container(
-                          padding: EdgeInsets.all(10),
-                          decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(8.r)),
-                              boxShadow: const [
-                                BoxShadow(
-                                    color: ColorManager.grayWhite2,
-                                    offset: Offset(0, 1),
-                                    blurRadius: 5)
-                              ]),
-                          height: AppSize.s180.h,
-                          width: AppSize.s155.w,
-                          child: Column(
-                            // mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Container(
-                                    width: 34,
-                                    height: 21,
-                                    decoration: BoxDecoration(
-                                        color: ColorManager.mainColor,
-                                        borderRadius:
-                                            BorderRadius.circular(4)),
-                                  ),
-                                  Container(
-                                    padding: const EdgeInsets.all(5),
-                                    width: 22,
-                                    height: 22,
-                                      decoration: BoxDecoration(
-                                        color: ColorManager.mainColor,
-                                        borderRadius: BorderRadius.circular(11)
-                                      ),
-                                      child: SvgPicture.asset(
-                                    IconAssets.heart,
-                                  )),
-                                ],
-                              )
-                            ],
-                          )),
-                      Container(
-                          padding: EdgeInsets.all(10),
-                          decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(8.r)),
-                              boxShadow: const [
-                                BoxShadow(
-                                    color: ColorManager.grayWhite2,
-                                    offset: Offset(0, 1),
-                                    blurRadius: 5)
-                              ]),
-                          height: AppSize.s180.h,
-                          width: AppSize.s155.w,
-                          child: Column(
-                            // mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Container(
-                                    width: 34,
-                                    height: 21,
-                                    decoration: BoxDecoration(
-                                        color: ColorManager.mainColor,
-                                        borderRadius:
-                                            BorderRadius.circular(4)),
-                                  ),
-                                  Container(
-                                    padding: const EdgeInsets.all(5),
-                                    width: 22,
-                                    height: 22,
-                                      decoration: BoxDecoration(
-                                        color: ColorManager.mainColor,
-                                        borderRadius: BorderRadius.circular(11)
-                                      ),
-                                      child: SvgPicture.asset(
-                                    IconAssets.heart,
-                                  )),
-                                ],
-                              )
-                            ],
-                          )),
-
-                    ],
-                  )
+                  CustomGridView(
+                      [CardItem(image: ImageAssets.item4, name: "One Plus", prise: "945.00",discount: null,),
+                    CardItem(image: ImageAssets.item2, name: "One Plus", prise: "945.00",discount: null,),
+                    CardItem(image: ImageAssets.item3, name: "One Plus", prise: "945.00",discount: null,),
+                    CardItem(image: ImageAssets.item1, name: "One Plus", prise: "945.00",discount: null,),
+                    CardItem(image: ImageAssets.item5, name: "One Plus", prise: "945.00",discount: null,),])
                 ],
+
               ),
-            ),
-          ))),
-    );
+            )));
   }
 }
