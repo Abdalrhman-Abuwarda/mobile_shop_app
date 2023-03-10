@@ -1,18 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mobile_shop_app/core/provider/generalProvider.dart';
 import 'package:provider/provider.dart';
 
-import '../../../resources/colorsManager.dart';
-import '../../../resources/valuesManager.dart';
+import '../../../resources/colors_manager.dart';
+import '../../../resources/values_manager.dart';
 import '../../../routing/navigations.dart';
 import '../../../routing/router.dart';
-import '../../../routing/routes.dart';
-import 'descriptionOnboading.dart';
-import 'pageViewOnBoarding.dart';
-import 'sliderIndicator.dart';
-import 'titlOnBoarding.dart';
+import 'description_onboading.dart';
+import 'page_view_onboarding.dart';
+import 'slider_indicator.dart';
+import 'titl_onboarding.dart';
 import '../../../core/model/onBoardingModel.dart';
 
 
@@ -25,7 +23,6 @@ class OnBoardingPage extends StatefulWidget {
 
 class _OnBoardingPageState extends State<OnBoardingPage> {
 final List<OnBoardingModel> list = OnBoardingModel.data;
-late PageController _controller;
 
 @override
   void initState() {

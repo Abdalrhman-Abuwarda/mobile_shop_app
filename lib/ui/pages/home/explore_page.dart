@@ -4,12 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../../resources/assetsManager.dart';
-import '../../../resources/valuesManager.dart';
-import '../../sheard/widget/cardItem.dart';
-import '../../sheard/widget/customAppBar.dart';
-import '../../sheard/widget/customGridViow.dart';
-import '../../wedgts/cardAD.dart';
+import '../../../resources/assets_manager.dart';
+import '../../../resources/values_manager.dart';
+import '../../sheard/widget/card_item.dart';
+import '../../sheard/widget/custom_appbar.dart';
+import '../../wedgts/card_ad.dart';
 import '../../wedgts/rowSeeAll.dart';
 
 class Explore extends StatefulWidget {

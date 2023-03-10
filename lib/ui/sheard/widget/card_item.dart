@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../../resources/assetsManager.dart';
-import '../../../resources/colorsManager.dart';
-import '../../../resources/valuesManager.dart';
+import '../../../resources/assets_manager.dart';
+import '../../../resources/colors_manager.dart';
+import '../../../resources/values_manager.dart';
 
 class CardItem extends StatelessWidget {
-  CardItem({required this.image,required this.name,required this.prise, this.discount ,Key? key}) : super(key: key);
-  String name;
-  String prise;
-  String image;
-  String? discount;
+  const CardItem({required this.image,required this.name,required this.prise, this.discount ,Key? key}) : super(key: key);
+  final String name;
+  final String prise;
+  final String image;
+  final String? discount;
 
 
   @override
@@ -23,8 +23,8 @@ class CardItem extends StatelessWidget {
             borderRadius: BorderRadius.all(Radius.circular(AppPadding.p8.r)),
             boxShadow: const [
               BoxShadow(
-                  color: ColorManager.grayWhite2,
-                  offset: Offset(0, 1),
+                  color: ColorManager.shadowColor,
+                  offset: Offset(0, 6),
                   blurRadius: 5)
             ]),
         height: 255.h,

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mobile_shop_app/resources/valuesManager.dart';
+import 'package:mobile_shop_app/resources/values_manager.dart';
 
-import 'colorsManager.dart';
+import 'colors_manager.dart';
 
 class ThemeManager {
   static ThemeData get lightTheme {

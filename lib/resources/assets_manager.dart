@@ -1,28 +1,28 @@
-const String image_Paht = "assets/image";
+const String imagePaht = "assets/image";
 
 class ImageAssets {
-  static const String mainImage = "$image_Paht/mainimage.png";
-  static const String item1 = "$image_Paht/item1.png";
-  static const String item2 = "$image_Paht/item2.png";
-  static const String item3 = "$image_Paht/item3.png";
-  static const String item4 = "$image_Paht/item4.png";
-  static const String item5 = "$image_Paht/item5.png";
-  static const String successImage = "$image_Paht/success.png";
-  static const String emailImage = "$image_Paht/email.png";
-  static const String mobileSuccessImage = "$image_Paht/mobile_success.png";
-  static const String idVerificationImage = "$image_Paht/id_verification.png";
+  static const String mainImage = "$imagePaht/mainimage.png";
+  static const String item1 = "$imagePaht/item1.png";
+  static const String item2 = "$imagePaht/item2.png";
+  static const String item3 = "$imagePaht/item3.png";
+  static const String item4 = "$imagePaht/item4.png";
+  static const String item5 = "$imagePaht/item5.png";
+  static const String successImage = "$imagePaht/success.png";
+  static const String emailImage = "$imagePaht/email.png";
+  static const String mobileSuccessImage = "$imagePaht/mobile_success.png";
+  static const String idVerificationImage = "$imagePaht/id_verification.png";
   static const String addressVerificationImage =
-      "$image_Paht/adress_verification.png";
+      "$imagePaht/adress_verification.png";
   static const String homeBottomBarImage =
-      "$image_Paht/bottomNavigationBar/home.png";
+      "$imagePaht/bottomNavigationBar/home.png";
   static const String cashBottomBarImage =
-      "$image_Paht/bottomNavigationBar/cash.png";
+      "$imagePaht/bottomNavigationBar/cash.png";
   static const String invoiceBottomBarImage =
-      "$image_Paht/bottomNavigationBar/invoice.png";
+      "$imagePaht/bottomNavigationBar/invoice.png";
   static const String analyticsBottomBarImage =
-      "$image_Paht/bottomNavigationBar/google-analytics.png";
+      "$imagePaht/bottomNavigationBar/google-analytics.png";
   static const String userBottomBarImage =
-      "$image_Paht/bottomNavigationBar/user.png";
+      "$imagePaht/bottomNavigationBar/user.png";
 }
 
 const String iconPath = 'assets/icons';

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:mobile_shop_app/resources/assetsManager.dart';
+import 'package:mobile_shop_app/resources/assets_manager.dart';
 
-import '../../../resources/colorsManager.dart';
-import '../../../resources/valuesManager.dart';
+import '../../../resources/colors_manager.dart';
+import '../../../resources/values_manager.dart';
 import '../../../routing/navigations.dart';
 
 class CheckEmailPage extends StatelessWidget {

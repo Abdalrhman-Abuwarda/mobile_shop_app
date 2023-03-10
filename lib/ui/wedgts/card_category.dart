@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../resources/assetsManager.dart';
-import '../../resources/colorsManager.dart';
-import '../../resources/valuesManager.dart';
+import '../../resources/colors_manager.dart';
+import '../../resources/values_manager.dart';
 class CardCategory extends StatelessWidget {
   const CardCategory({
     Key? key,

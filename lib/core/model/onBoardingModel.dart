@@ -1,5 +1,5 @@
 
-import '../../resources/assetsManager.dart';
+import '../../resources/assets_manager.dart';
 
 class OnBoardingModel{
   OnBoardingModel({required this.svgPath, required this.title, required this.desc});

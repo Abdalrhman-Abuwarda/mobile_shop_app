@@ -1,16 +1,15 @@
-import 'dart:async';
 
 import 'package:flutter/material.dart';
 
-import '../../resources/valuesManager.dart';
+import '../../resources/values_manager.dart';
 
 
 class CardAD extends StatelessWidget {
-   CardAD({required this.listImage,required this.controller,required this.onTap, Key? key}) : super(key: key);
+   const CardAD({required this.listImage,required this.controller,required this.onTap, Key? key}) : super(key: key);
 
-  List? listImage;
-  PageController controller;
-  Function(int x) onTap;
+   final List? listImage;
+   final PageController controller;
+   final Function(int x) onTap;
 
   @override
   Widget build(BuildContext context) {

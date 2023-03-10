@@ -3,7 +3,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Helpers {
   static final GlobalKey<ScaffoldMessengerState> scaffoldKey = GlobalKey<ScaffoldMessengerState>();
-  final GlobalKey<ScaffoldState> _scaffoldKey =  GlobalKey<ScaffoldState>();
 
 
  static showSnackBar({required String message}) {
@@ -22,11 +21,11 @@ class Helpers {
 
 
 class alertDialog extends StatelessWidget {
-   alertDialog({required this.title, required this.content, required this.onPressed}) ;
+   const alertDialog({super.key, required this.title, required this.content, required this.onPressed}) ;
 
    final String title;
    final String content;
-   dynamic Function() onPressed;
+   final dynamic Function() onPressed;
   @override
   Widget build(BuildContext context) {
     return AlertDialog(

@@ -18,7 +18,7 @@ extension ExtendedString  on String {
     RegExp hasUpper = RegExp(r'[A-Z]');
     RegExp hasLower = RegExp(r'[a-z]');
     RegExp hasDigit = RegExp(r'\d');
-    RegExp hasPunct = RegExp(r'[!@#\$&*~-]');
+    RegExp hasPunct = RegExp(r'[!@#$&*~-]');
     // 2
     if (!RegExp(r'.{10,}').hasMatch(this)) {
       return 'Passwords must have at least 10 characters';

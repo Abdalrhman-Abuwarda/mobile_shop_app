@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mobile_shop_app/utils/validate.dart';
 
-import '../../../resources/assetsManager.dart';
-import '../../../resources/valuesManager.dart';
-import '../../wedgts/customTextFormField.dart';
+import '../../../resources/assets_manager.dart';
+import '../../../resources/values_manager.dart';
+import '../../wedgts/custom_text_form_field.dart';
 class CreateNewPasswordPage extends StatelessWidget {
    CreateNewPasswordPage({Key? key}) : super(key: key);
 

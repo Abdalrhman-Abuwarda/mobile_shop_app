@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:mobile_shop_app/resources/assetsManager.dart';
-import 'package:mobile_shop_app/resources/valuesManager.dart';
+import 'package:mobile_shop_app/resources/assets_manager.dart';
+import 'package:mobile_shop_app/resources/values_manager.dart';
 import 'package:mobile_shop_app/utils/validate.dart';
 import 'package:pinput/pinput.dart';
 
-import '../../../resources/colorsManager.dart';
+import '../../../resources/colors_manager.dart';
 
 class PhoneVerificationPage extends StatefulWidget {
    const PhoneVerificationPage({Key? key}) : super(key: key);

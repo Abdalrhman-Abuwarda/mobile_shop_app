@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mobile_shop_app/resources/valuesManager.dart';
-import 'package:mobile_shop_app/ui/sheard/widget/customAppBar.dart';
+import 'package:mobile_shop_app/resources/values_manager.dart';
+import 'package:mobile_shop_app/ui/sheard/widget/custom_appbar.dart';
 
-import '../../../resources/assetsManager.dart';
-import '../../sheard/widget/cardItem.dart';
-import '../../sheard/widget/customGridViow.dart';
+import '../../../resources/assets_manager.dart';
+import '../../sheard/widget/card_item.dart';
+import '../../sheard/widget/custom_grid_viow.dart';
 
 class Favorite extends StatelessWidget {
   const Favorite({Key? key}) : super(key: key);
@@ -18,7 +18,7 @@ class Favorite extends StatelessWidget {
         child: CustomAppBar(
           title: "Favorite",
           leadingImages: null,
-          actionsList: [],
+          actionsList: const [],
         ),
       ),
         body: CustomGridView(

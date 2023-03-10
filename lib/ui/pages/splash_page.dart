@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:mobile_shop_app/resources/valuesManager.dart';
+import 'package:mobile_shop_app/resources/values_manager.dart';
 import 'package:mobile_shop_app/routing/navigations.dart';
 
-import '../../resources/assetsManager.dart';
+import '../../resources/assets_manager.dart';
 import '../../routing/router.dart';
 
 class SplashPage extends StatefulWidget {

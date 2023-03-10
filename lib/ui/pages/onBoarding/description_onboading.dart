@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../resources/valuesManager.dart';
+import '../../../resources/values_manager.dart';
 import '../../../core/model/onBoardingModel.dart';
 
 class DescriptionOnBoarding extends StatelessWidget {

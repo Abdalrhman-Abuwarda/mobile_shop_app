@@ -3,15 +3,13 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:mobile_shop_app/resources/valuesManager.dart';
-import 'package:mobile_shop_app/ui/sheard/widget/cardItem.dart';
-import 'package:mobile_shop_app/ui/sheard/widget/customAppBar.dart';
-import 'package:mobile_shop_app/ui/sheard/widget/customGridViow.dart';
+import 'package:mobile_shop_app/resources/values_manager.dart';
+import 'package:mobile_shop_app/ui/sheard/widget/card_item.dart';
+import 'package:mobile_shop_app/ui/sheard/widget/custom_appbar.dart';
+import 'package:mobile_shop_app/ui/sheard/widget/custom_grid_viow.dart';
 import 'package:mobile_shop_app/ui/wedgts/rowSeeAll.dart';
-
-import '../../../resources/assetsManager.dart';
-import '../../../resources/colorsManager.dart';
-import '../../wedgts/cardAD.dart';
+import '../../../resources/assets_manager.dart';
+import '../../wedgts/card_ad.dart';
 
 class MainHomePage extends StatefulWidget {
   const MainHomePage({Key? key}) : super(key: key);

@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:mobile_shop_app/resources/assetsManager.dart';
-import 'package:mobile_shop_app/resources/colorsManager.dart';
-import 'package:mobile_shop_app/resources/valuesManager.dart';
-import 'package:mobile_shop_app/ui/pages/auth/signUpPage.dart';
-import 'package:mobile_shop_app/ui/pages/home/explore.dart';
-import 'package:mobile_shop_app/ui/pages/home/favorite.dart';
-import 'package:mobile_shop_app/ui/pages/home/mainHomePage.dart';
+import 'package:mobile_shop_app/resources/assets_manager.dart';
+import 'package:mobile_shop_app/resources/colors_manager.dart';
+import 'package:mobile_shop_app/resources/values_manager.dart';
+import 'package:mobile_shop_app/ui/pages/auth/sign_up_page.dart';
+import 'package:mobile_shop_app/ui/pages/home/explore_page.dart';
+import 'package:mobile_shop_app/ui/pages/home/favorite_page.dart';
+import 'package:mobile_shop_app/ui/pages/home/main_home_page.dart';
 
 class Home extends StatefulWidget {
-  Home({Key? key}) : super(key: key);
+  const Home({Key? key}) : super(key: key);
 
   @override
   State<Home> createState() => _HomeState();
@@ -20,7 +20,7 @@ class _HomeState extends State<Home> {
   int _currentPage = 0;
   List<Widget> pages = [
     const MainHomePage(),
-    SignUpPage(),
+    const SignUpPage(),
     const Explore(),
     const Favorite(),
     const MainHomePage(),

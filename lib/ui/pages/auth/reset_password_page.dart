@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mobile_shop_app/resources/assetsManager.dart';
-import 'package:mobile_shop_app/resources/valuesManager.dart';
+import 'package:mobile_shop_app/resources/assets_manager.dart';
+import 'package:mobile_shop_app/resources/values_manager.dart';
 import 'package:mobile_shop_app/routing/navigations.dart';
 import 'package:mobile_shop_app/routing/router.dart';
-import 'package:mobile_shop_app/ui/wedgts/customTextFormField.dart';
+import 'package:mobile_shop_app/ui/wedgts/custom_text_form_field.dart';
 import 'package:mobile_shop_app/utils/validate.dart';
 
 class ResetPasswordPage extends StatefulWidget {

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../resources/colorsManager.dart';
-import '../../resources/valuesManager.dart';
+import '../../resources/colors_manager.dart';
+import '../../resources/values_manager.dart';
 
 class SeeAll extends StatelessWidget {
-  SeeAll(this.textLift, {Key? key}) : super(key: key);
-  String textLift;
+  const SeeAll(this.textLift, {Key? key}) : super(key: key);
+  final String textLift;
   @override
   Widget build(BuildContext context) {
     return Padding(

@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:mobile_shop_app/resources/colorsManager.dart';
-import 'package:mobile_shop_app/resources/valuesManager.dart';
+import 'package:mobile_shop_app/resources/colors_manager.dart';
+import 'package:mobile_shop_app/resources/values_manager.dart';
 import 'package:mobile_shop_app/utils/validate.dart';
 
-import '../../../resources/assetsManager.dart';
-import '../../wedgts/customTextFormField.dart';
+import '../../../resources/assets_manager.dart';
+import '../../wedgts/custom_text_form_field.dart';
 
 class SignUpPage extends StatefulWidget {
-  SignUpPage({Key? key}) : super(key: key);
+  const SignUpPage({Key? key}) : super(key: key);
 
   @override
   State<SignUpPage> createState() => _SignUpPageState();

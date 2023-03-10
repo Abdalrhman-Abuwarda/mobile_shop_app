@@ -1,14 +1,13 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mobile_shop_app/routing/router.dart';
-import 'package:mobile_shop_app/ui/pages/auth/checkEmailPage.dart';
+import 'package:mobile_shop_app/ui/pages/auth/check_email_page.dart';
 
-import '../ui/pages/auth/phoneVerificationPage.dart';
-import '../ui/pages/auth/resetPasswordPage.dart';
-import '../ui/pages/auth/signInPage.dart';
-import '../ui/pages/auth/signUpPage.dart';
-import '../ui/pages/home/mainHomePage.dart';
-import '../ui/pages/onBoarding/onBoardingPages.dart';
+import '../ui/pages/auth/phone_verification_page.dart';
+import '../ui/pages/auth/reset_password_page.dart';
+import '../ui/pages/auth/sign_in_page.dart';
+import '../ui/pages/auth/sign_up_page.dart';
+import '../ui/pages/home/main_home_page.dart';
+import '../ui/pages/onBoarding/on_boarding_pages.dart';
 
 
 class RoutsGenerate{

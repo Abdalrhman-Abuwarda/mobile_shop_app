@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_slider_indicator/flutter_slider_indicator.dart';
-import 'package:mobile_shop_app/resources/valuesManager.dart';
-import '../../../resources/colorsManager.dart';
+import 'package:mobile_shop_app/resources/values_manager.dart';
+import '../../../resources/colors_manager.dart';
 import '../../../core/model/onBoardingModel.dart';
 
 class Indicator extends StatelessWidget {
