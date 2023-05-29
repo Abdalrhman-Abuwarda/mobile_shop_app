@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../../../core/model/onBoardingModel.dart';
-class PageViewOnboarding extends StatelessWidget {
-  const PageViewOnboarding({
+class PageViewOnBoarding extends StatelessWidget {
+  const PageViewOnBoarding({
     Key? key,
     required this.list,
     required PageController controller,

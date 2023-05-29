@@ -13,52 +13,53 @@ class Favorite extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: Size.fromHeight(AppSize.s90.h),
-        child: CustomAppBar(
-          title: "Favorite",
-          leadingImages: null,
-          actionsList: [],
+        appBar: PreferredSize(
+          preferredSize: Size.fromHeight(AppSize.s90.h),
+          child: CustomAppBar(
+            title: "Favorite",
+            leadingImages: null,
+            actionsList: [],
+          ),
         ),
-      ),
         body: CustomGridView(
-      [
-        CardItem(
-          image: ImageAssets.item4,
-          name: "One Plus",
-          prise: "945.00",
-          discount: null,
-        ), CardItem(
-          image: ImageAssets.item4,
-          name: "One Plus",
-          prise: "945.00",
-          discount: null,
-        ),
-        CardItem(
-          image: ImageAssets.item2,
-          name: "One Plus",
-          prise: "945.00",
-          discount: null,
-        ),
-        CardItem(
-          image: ImageAssets.item3,
-          name: "One Plus",
-          prise: "945.00",
-          discount: null,
-        ),
-        CardItem(
-          image: ImageAssets.item1,
-          name: "One Plus",
-          prise: "945.00",
-          discount: null,
-        ),
-        CardItem(
-          image: ImageAssets.item5,
-          name: "One Plus",
-          prise: "945.00",
-          discount: null,
-        ),
-      ],
-    ));
+          [
+            CardItem(
+              image: ImageAssets.item4,
+              name: "One Plus",
+              prise: "945.00",
+              discount: null,
+            ),
+            CardItem(
+              image: ImageAssets.item4,
+              name: "One Plus",
+              prise: "945.00",
+              discount: null,
+            ),
+            CardItem(
+              image: ImageAssets.item2,
+              name: "One Plus",
+              prise: "945.00",
+              discount: null,
+            ),
+            CardItem(
+              image: ImageAssets.item3,
+              name: "One Plus",
+              prise: "945.00",
+              discount: null,
+            ),
+            CardItem(
+              image: ImageAssets.item1,
+              name: "One Plus",
+              prise: "945.00",
+              discount: null,
+            ),
+            CardItem(
+              image: ImageAssets.item5,
+              name: "One Plus",
+              prise: "945.00",
+              discount: null,
+            ),
+          ],
+        ));
   }
 }

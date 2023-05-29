@@ -7,10 +7,10 @@ import 'package:mobile_shop_app/resources/valuesManager.dart';
 import 'package:mobile_shop_app/ui/pages/auth/signUpPage.dart';
 import 'package:mobile_shop_app/ui/pages/home/explore.dart';
 import 'package:mobile_shop_app/ui/pages/home/favorite.dart';
-import 'package:mobile_shop_app/ui/pages/home/mainHomePage.dart';
+import 'package:mobile_shop_app/ui/pages/home/main_home_page.dart';
 
 class Home extends StatefulWidget {
-  Home({Key? key}) : super(key: key);
+  const Home({Key? key}) : super(key: key);
 
   @override
   State<Home> createState() => _HomeState();
@@ -47,7 +47,7 @@ class _HomeState extends State<Home> {
                 backgroundColor: ColorManager.whiteColor,
                 icon: Container(
                   padding: const EdgeInsets.all(5),
-                  height: 32,
+                  height: AppSize.s32.h,
                   width: 32,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(6.r),

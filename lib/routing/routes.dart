@@ -7,7 +7,7 @@ import '../ui/pages/auth/phoneVerificationPage.dart';
 import '../ui/pages/auth/resetPasswordPage.dart';
 import '../ui/pages/auth/signInPage.dart';
 import '../ui/pages/auth/signUpPage.dart';
-import '../ui/pages/home/mainHomePage.dart';
+import '../ui/pages/home/main_home_page.dart';
 import '../ui/pages/onBoarding/onBoardingPages.dart';
 
 

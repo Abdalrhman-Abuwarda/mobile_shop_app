@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mobile_shop_app/core/provider/generalProvider.dart';
 import 'package:provider/provider.dart';
@@ -8,7 +7,6 @@ import '../../../resources/colorsManager.dart';
 import '../../../resources/valuesManager.dart';
 import '../../../routing/navigations.dart';
 import '../../../routing/router.dart';
-import '../../../routing/routes.dart';
 import 'descriptionOnboading.dart';
 import 'pageViewOnBoarding.dart';
 import 'sliderIndicator.dart';
@@ -25,7 +23,6 @@ class OnBoardingPage extends StatefulWidget {
 
 class _OnBoardingPageState extends State<OnBoardingPage> {
 final List<OnBoardingModel> list = OnBoardingModel.data;
-late PageController _controller;
 
 @override
   void initState() {
@@ -49,7 +46,7 @@ late PageController _controller;
               SizedBox(
                 height: 271.h,
                 width: 331.w,
-                child: PageViewOnboarding(list: list, controller: general.controller, activeIndex: general.activeIndex),
+                child: PageViewOnBoarding(list: list, controller: general.controller, activeIndex: general.activeIndex),
               ),
               addVerticalSpace(AppSize.s85.h),
               Indicator(list: list, activeIndex: general.activeIndex),

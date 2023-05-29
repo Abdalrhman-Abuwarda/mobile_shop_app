@@ -20,7 +20,7 @@ class _SplashPageState extends State<SplashPage> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Future.delayed(Duration(seconds: 3), (){
+    Future.delayed(const Duration(seconds: 3), (){
       ServiceNavigation.serviceNavi.pushNamedReplacement(RouteGenerator.onBoarding);
     });
   }
@@ -36,7 +36,8 @@ class _SplashPageState extends State<SplashPage> {
             height: AppSize.s77.h,
             width: AppSize.s100.w,),
             addVerticalSpace(AppSize.s33.h),
-            Text("MOBILE SHOP", style: Theme.of(context).textTheme.headline1,)
+            Text("MOBILE SHOP", style: Theme.of(context).textTheme.headline1,),
+            const CircularProgressIndicator(),
           ],
         ),
       ),

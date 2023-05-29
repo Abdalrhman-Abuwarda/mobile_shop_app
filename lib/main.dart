@@ -12,7 +12,7 @@ import 'package:mobile_shop_app/ui/pages/auth/resetPasswordPage.dart';
 import 'package:mobile_shop_app/ui/pages/auth/signInPage.dart';
 import 'package:mobile_shop_app/ui/pages/home/explore.dart';
 import 'package:mobile_shop_app/ui/pages/home/home.dart';
-import 'package:mobile_shop_app/ui/pages/home/mainHomePage.dart';
+import 'package:mobile_shop_app/ui/pages/home/main_home_page.dart';
 import 'package:mobile_shop_app/ui/pages/splashPage.dart';
 import 'package:mobile_shop_app/utils/helper.dart';
 import 'package:provider/provider.dart';
@@ -49,7 +49,7 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: 'Flutter Demo',
           theme: ThemeManager.lightTheme,
-          home:  Home(),
+          home: const SplashPage(),
           navigatorKey: ServiceNavigation.serviceNavi.navKey,
           onGenerateRoute: RoutsGenerate.generateRoute,
         ),

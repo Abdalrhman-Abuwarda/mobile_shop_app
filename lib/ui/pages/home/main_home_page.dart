@@ -10,7 +10,6 @@ import 'package:mobile_shop_app/ui/sheard/widget/customGridViow.dart';
 import 'package:mobile_shop_app/ui/wedgts/rowSeeAll.dart';
 
 import '../../../resources/assetsManager.dart';
-import '../../../resources/colorsManager.dart';
 import '../../wedgts/cardAD.dart';
 
 class MainHomePage extends StatefulWidget {
