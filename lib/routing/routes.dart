@@ -2,12 +2,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mobile_shop_app/routing/router.dart';
 import 'package:mobile_shop_app/ui/pages/auth/checkEmailPage.dart';
+import 'package:mobile_shop_app/ui/pages/home/home.dart';
 
 import '../ui/pages/auth/phoneVerificationPage.dart';
 import '../ui/pages/auth/resetPasswordPage.dart';
 import '../ui/pages/auth/signInPage.dart';
 import '../ui/pages/auth/signUpPage.dart';
-import '../ui/pages/home/main_home_page.dart';
 import '../ui/pages/onBoarding/onBoardingPages.dart';
 
 
@@ -28,7 +28,7 @@ class RoutsGenerate{
       case RouteGenerator.checkEmailPage:
         return MaterialPageRoute(builder: (_) => const CheckEmailPage());
       case RouteGenerator.homePage:
-        return MaterialPageRoute(builder: (_) => const MainHomePage());
+        return MaterialPageRoute(builder: (_) => const Home());
         default:
         throw const FormatException("Route not found");
     }

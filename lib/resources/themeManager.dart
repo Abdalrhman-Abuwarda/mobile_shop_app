@@ -91,7 +91,7 @@ class ThemeManager {
             borderRadius: BorderRadius.all(Radius.circular(AppSize.s10.r)),
             borderSide: const BorderSide(
               color: ColorManager.greenColor,
-              width: 2,
+              width: 1,
             ),
           ),
         )
