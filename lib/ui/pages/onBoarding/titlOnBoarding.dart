@@ -7,7 +7,9 @@ class TitleOnboarding extends StatelessWidget {
     Key? key,
     required this.list,
     required int activeIndex,
-  }) : _activeIndex = activeIndex, super(key: key);
+  }) :
+        _activeIndex = activeIndex,
+        super(key: key);
 
   final List<OnBoardingModel> list;
   final int _activeIndex;
@@ -23,7 +25,6 @@ class TitleOnboarding extends StatelessWidget {
         // maxLines: 2,
         textAlign: TextAlign.center,
         overflow: TextOverflow.visible,
-        //TextStyle(fontFamily: "Open Sans", fontWeight: FontWeight.bold, fontSize: 22),
       ),
     );
   }

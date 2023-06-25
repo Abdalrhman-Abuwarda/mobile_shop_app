@@ -3,6 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:mobile_shop_app/resources/colorsManager.dart';
 import 'package:mobile_shop_app/resources/valuesManager.dart';
+import 'package:mobile_shop_app/routing/navigations.dart';
+import 'package:mobile_shop_app/routing/router.dart';
 import 'package:mobile_shop_app/utils/validate.dart';
 
 import '../../../resources/assetsManager.dart';
@@ -132,7 +134,9 @@ class _SignUpPageState extends State<SignUpPage> {
                         .headline4,),
                     addHorizantelSpace(AppSize.s5.w),
                     TextButton(
-                        onPressed: () {}, child: Text("Log in", style: Theme
+                        onPressed: () {
+                          ServiceNavigation.serviceNavi.pushNamedWidget(RouteGenerator.signInPage);                        },
+                        child: Text("Log in", style: Theme
                         .of(context)
                         .textTheme
                         .headline4!
